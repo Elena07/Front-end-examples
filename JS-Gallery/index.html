@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main">
+    <h1>welcome to viseven <span class="h">imagestock</span></h1>
+    <div class="wrapper">
+        <div id="image_list" class="inner-wrapper">
+            <div class=" pic pic-width picture1" data-item-id="1">
+                <a href="#" style="background-image: url(image/img1.jpg)">
+                    <div class="hover">
+                        <div class="com"><span class="count-com">0</span></div>
+                        <div class="figure-like"><span class="count-like">0</span></div>
+                        <div class="figure-dislike"><span class="count-dislike">0</span></div>
+                    </div>
+                </a>
+            </div>
+            <div class="pic pic-common picture7" data-item-id="9">
+                <a href="#" style="background-image: url(image/img7.jpg)">
+                    <div class="hover">
+                        <div class="com"><span class="count-com">0</span></div>
+                        <div class="figure-like"><span class="count-like">0</span></div>
+                        <div class="figure-dislike"><span class="count-dislike">0</span></div>
+                    </div>
+                </a>
+            </div>
+            <div class="pic pic-common picture3" data-item-id="3">
+                <a href="#" style="background-image: url(image/img3.jpg)">
+                    <div class="hover">
+                        <div class="com"><span class="count-com">0</span></div>
+                        <div class="figure-like"><span class="count-like">0</span></div>
+                        <div class="figure-dislike"><span class="count-dislike">0</span></div>
+                    </div>
+                </a>
+            </div>
+            <div class="pic pic-common picture5" data-item-id="5">
+                <a href="#" style="background-image: url(image/img5.jpg)">
+                    <div class="hover">
+                        <div class="com"><span class="count-com">0</span></div>
+                        <div class="figure-like"><span class="count-like">0</span></div>
+                        <div class="figure-dislike"><span class="count-dislike">0</span></div>
+                    </div>
+                </a>
+            </div>
+            <div class="pic pic-width picture8" data-item-id="23">
+                <a href="#" style="background-image: url(image/img8.jpg)">
+                    <div class="hover">
+                        <div class="com"><span class="count-com">0</span></div>
+                        <div class="figure-like"><span class="count-like">0</span></div>
+                        <div class="figure-dislike"><span class="count-dislike">0</span></div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="pic pic-long picture2" data-item-id="2">
+                <a href="#" style="background-image: url(image/img2.jpg)">
+                    <div class="hover">
+                        <div class="com"><span class="count-com">0</span></div>
+                        <div class="figure-like"><span class="count-like">0</span></div>
+                        <div class="figure-dislike"><span class="count-dislike">0</span></div>
+                    </div>
+                </a>
+            </div>
+            <div class="pic pic-common picture4" data-item-id="4">
+                <a href="#" style="background-image: url(image/img4.jpg)">
+                    <div class="hover">
+                        <div class="com"><span class="count-com">0</span></div>
+                        <div class="figure-like"><span class="count-like">0</span></div>
+                        <div class="figure-dislike"><span class="count-dislike">0</span></div>
+                    </div>
+                </a>
+            </div>
+            <div class="pic pic-common picture6" data-item-id="7">
+                <a href="#" style="background-image: url(image/img6.jpg)">
+                    <div class="hover">
+                        <div class="com"><span class="count-com">0</span></div>
+                        <div class="figure-like"><span class="count-like">0</span></div>
+                        <div class="figure-dislike"><span class="count-dislike">0</span></div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="hidden-pic">
+                <a href="#" style="">
+                    <div class="hover">
+                        <div class="com"><span class="count-com">0</span></div>
+                        <div class="figure-like"><span class="count-like">0</span></div>
+                        <div class="figure-dislike"><span class="count-dislike">0</span></div>
+                    </div>
+                </a>
+            </div>
+
+        <div class="pic-common picture9 add-image">
+            <label for="imgFile">
+                <span class="plus"></span>
+                <span class="text">Add your <br/>Picture</span>
+
+            </label>
+            <input id="imgFile" name="myFile" type="file">
+
+        </div>
+
+    </div>
+
+    <div class="bg"></div>
+    <div class="popup" id="popup">
+        <div class="pic-block">
+            <div id="popup-picture" class="image-block">
+                <!--<img src="image/img1.jpg" alt="image" id="popup-picture">-->
+            </div>
+            <div class="like" id="like">
+                <div class="figure-like"></div>
+                <span class="count-like">0</span>
+            </div>
+            <div class="dislike" id="dislike">
+                <div class="figure-dislike"></div>
+                <span class="count-dislike">0</span>
+            </div>
+        </div>
+        <div class="wrap-comments">
+            <div id="close">
+                <img src="image/close-icon.png">
+            </div>
+            <p class="comments">
+                Comments: <span id="current_comment_counter"></span>
+            </p>
+            <div class="comment-history">
+                <ul class="comment-history-list">
+
+                </ul>
+            </div>
+            <div class="line"></div>
+            <div class="write-comment">
+            <form action="" method="get" id="comments_form" name="comments">
+                <input type="text" name="name" id="name" placeholder="Type your nickname here..." />
+                <div class="comment-block">
+                <textarea type="text" name="comment" id="comment" placeholder="Write your comment here..." ></textarea>
+                <button type="submit" id="submit" name="send"></button>
+                </div>
+            </form>
+            </div>
+
+        </div>
+    </div>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>

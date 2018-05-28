@@ -1,0 +1,720 @@
+html, body {
+    min-height: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: FuturaMediumC;
+    src: url('fonts/FuturaMediumC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.wrapper {
+    width: 1024px;
+    height: 768px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main {
+    background-image: url("image/main-bg.jpg");
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    width: 1024px;
+    height: 768px;
+    margin: 0;
+    -webkit-animation: main-block 1s;
+    animation: main-block 1s;
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.main > p {
+    font-size: 30px;
+    font-family: 'FuturaMediumC';
+    padding-left: 55px;
+    padding-top: 125px;
+}
+
+.kolo1, .kolo2 {
+    background-image: url("image/circle.png");
+    background-repeat: no-repeat;
+    height: 154px;
+    width: 140px;
+    position: absolute;
+    opacity: 0;
+    -webkit-animation: kolo 1s;
+    animation: kolo 1s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-iteration-count: 4;
+    animation-iteration-count: 4;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+}
+.kolo1 {
+    top: 430px;
+    left: 400px;
+}
+
+.kolo2 {
+    top: 342px;
+    left: 575px;
+}
+
+.center {
+    background: url("image/back-new2.jpg");
+    background-repeat: no-repeat;
+    height: 478px;
+    width: 734px;
+    margin: 0 auto;
+    visibility: visible;
+    opacity: 0;
+    -webkit-animation: transform-center 1s;
+    animation: transform-center 1s;
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    top: 155px;
+    left: 138px;
+    border: 8px solid white;
+    border-radius: 6px;
+    position: absolute;
+}
+
+.white {
+    height: 478px;
+    width: 734px;
+    position: absolute;
+    background-color: white;
+    opacity: 0.2;
+    z-index: 50;
+    -webkit-animation: white 0.3s;
+    animation: white 0.3s;
+    -webkit-animation-delay: 17.7s;
+    animation-delay: 17.7s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 734px;
+    margin-top: 10px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    z-index: 100;
+
+}
+
+.mal {
+    margin-left: 40px;
+}
+
+.cit {
+    padding-right: 35px;
+}
+
+
+.stimol {
+    background-image: url("image/stimol.png");
+    width: 151px;
+    height: 145px;
+    margin-left: 45px;
+}
+
+.front {
+    z-index: 40;
+    top: 118px;
+    position: absolute;
+}
+
+.radical {
+    background-image: url("image/radical.png");
+    height: 98px;
+    width: 63px;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.radical1 {
+    top: 119px;
+    left: 40px;
+}
+.radical2 {
+    top: 47px;
+    left: 72px;
+}
+.radical3 {
+    top: 70px;
+    left: 204px;
+}
+.radical4 {
+    top: 50px;
+    left: 477px;
+}
+.radical5 {
+    top: 50px;
+    left: 609px;
+}
+.radical6 {
+    top: 380px;
+    left: 88px;
+}
+.radical7 {
+    top: 355px;
+    left: 350px;
+}
+.radical8 {
+    top: 377px;
+    left: 445px;
+}
+.radical9 {
+    top: 334px;
+    left: 605px;
+}
+.radical10 {
+    top: 326px;
+    left: 665px;
+}
+.radical1, .radical2, .radical3, .radical4, .radical5 {
+    -webkit-animation: radical 0.5s;
+    animation: radical 0.5s;
+    -webkit-animation-delay: 13.5s;
+    animation-delay: 13.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+}
+
+.radical6, .radical7, .radical8, .radical9, .radical10 {
+    -webkit-animation: radical 0.5s;
+    animation: radical 0.5s;
+    -webkit-animation-delay: 17.5s;
+    animation-delay: 17.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+}
+
+.yellow {
+    background-image: url("image/yellow-pill.png");
+    height: 9px;
+    width: 9px;
+    background-repeat: no-repeat;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    background-size: cover;
+}
+
+.yellow1 {
+    top: 47px;
+    left: 246px;
+    -webkit-animation: yellow1 7s;
+    animation: yellow1 7s;
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.yellow2 {
+    top: 40px;
+    left: 263px;
+    -webkit-animation: yellow2 7s;
+    animation: yellow2 7s;
+    -webkit-animation-delay: 9.5s;
+    animation-delay: 9.5s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.yellow3 {
+    top: 29px;
+    left: 281px;
+    -webkit-animation: yellow4 7s;
+    animation: yellow4 7s;
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.yellow4 {
+    top: 69px;
+    left: 250px;
+    -webkit-animation: yellow3 7s;
+    animation: yellow3 7s;
+    -webkit-animation-delay: 9.7s;
+    animation-delay: 9.7s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.yellow5 {
+    top: 59px;
+    left: 263px;
+    -webkit-animation: yellow5 7s;
+    animation: yellow5 7s;
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.yellow6 {
+    top: 48px;
+    left: 278px;
+    -webkit-animation: yellow1 7.5s;
+    animation: yellow1 7.5s;
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.yellow7 {
+    top: 79px;
+    left: 263px;
+    -webkit-animation: yellow4 7s;
+    animation: yellow4 7s;
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.yellow8 {
+    top: 67px;
+    left: 276px;
+    -webkit-animation: yellow2 7.3s;
+    animation: yellow2 7.3s;
+    -webkit-animation-delay: 10.1s;
+    animation-delay: 10.1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.yellow9 {
+    top: 102px;
+    left: 247px;
+    -webkit-animation: yellow5 7.5s;
+    animation: yellow5 7.5s;
+    -webkit-animation-delay: 9.9s;
+    animation-delay: 9.9s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.yellow10 {
+    top: 95px;
+    left: 266px;
+    -webkit-animation: yellow4 7s;
+    animation: yellow4 7s;
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.yellow11 {
+    top: 86px;
+    left: 279px;
+    -webkit-animation: yellow3 7s;
+    animation: yellow3 7s;
+    -webkit-animation-delay: 10.3s;
+    animation-delay: 10.3s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.yellow12 {
+    top: 115px;
+    left: 263px;
+    -webkit-animation: yellow4 7s;
+    animation: yellow4 7s;
+    -webkit-animation-delay: 10.2s;
+    animation-delay: 10.2s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.yellow13 {
+    top: 103px;
+    left: 281px;
+    -webkit-animation: yellow3 7s;
+    animation: yellow3 7s;
+    -webkit-animation-delay: 9s;
+    animation-delay: 9s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+}
+
+.red {
+    background-image: url("image/red-pill.png");
+    height: 8px;
+    width: 8px;
+    background-repeat: no-repeat;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    background-size: cover;
+}
+
+.red1 {
+    top: 26px;
+    left: 441px;
+    -webkit-animation: red1 7s;
+    animation: red1 7s;
+    -webkit-animation-delay: 9s;
+    animation-delay: 9s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.red2 {
+    top: 30px;
+    left: 458px;
+    -webkit-animation: red2 8s;
+    animation: red2 8s;
+    -webkit-animation-delay: 9.1s;
+    animation-delay: 9.1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.red3 {
+    top: 43px;
+    left: 458px;
+    -webkit-animation: red3 7s;
+    animation: red3 7s;
+    -webkit-animation-delay: 10.1s;
+    animation-delay: 10.1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.red4 {
+    top: 44px;
+    left: 474px;
+    -webkit-animation: red2 7s;
+    animation: red2 7s;
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.red5 {
+    top: 50px;
+    left: 445px;
+    -webkit-animation: red1 7s;
+    animation: red1 7s;
+    -webkit-animation-delay: 9.5s;
+    animation-delay: 9.5s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.red6 {
+    top: 58px;
+    left: 459px;
+    -webkit-animation: red4 7.5s;
+    animation: red4 7.5s;
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.red7 {
+    top: 64px;
+    left: 468px;
+    -webkit-animation: red3 7.8s;
+    animation: red3 7.8s;
+    -webkit-animation-delay: 9.8s;
+    animation-delay: 9.8s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.red8 {
+    top: 71px;
+    left: 441px;
+    -webkit-animation: red4 7s;
+    animation: red4 7s;
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.red9 {
+    top: 75px;
+    left: 455px;
+    -webkit-animation: red2 7.8s;
+    animation: red2 7.8s;
+    -webkit-animation-delay: 8.9s;
+    animation-delay: 8.9s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.red10 {
+    top: 84px;
+    left: 467px;
+    -webkit-animation: red5 7.2s;
+    animation: red5 7.2s;
+    -webkit-animation-delay: 9.9s;
+    animation-delay: 9.9s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.red11 {
+    top: 91px;
+    left: 444px;
+    -webkit-animation: red4 7s;
+    animation: red4 7s;
+    -webkit-animation-delay: 10.5s;
+    animation-delay: 10.5s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.red12 {
+    top: 98px;
+    left: 456px;
+    -webkit-animation: red5 8s;
+    animation: red5 8s;
+    -webkit-animation-delay: 9.1s;
+    animation-delay: 9.1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.red13 {
+    top: 107px;
+    left: 444px;
+    -webkit-animation: red1 7.5s;
+    animation: red1 7.5s;
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.red14 {
+    top: 116px;
+    left: 457px;
+    -webkit-animation: red3 7s;
+    animation: red3 7s;
+    -webkit-animation-delay: 9.5s;
+    animation-delay: 9.5s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.brown1 {
+    background-image: url("image/brown-pill.png");
+    height: 58px;
+    width: 85px;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: cover;
+    top: 400px;
+    left: 527px;
+}
+
+div.ellipse {
+    height: 41px;
+    width: 85px;
+    border-radius: 40%;
+    position: absolute;
+    top: 9px;
+    -webkit-box-shadow: 0 0 20px 10px white;
+    box-shadow: 0 0 20px 10px white;
+    opacity: 0;
+    -webkit-animation: shadow 1s;
+    animation: shadow 1s;
+    -webkit-animation-delay: 18s;
+    animation-delay: 18s;
+    -webkit-animation-iteration-count: 7;
+    animation-iteration-count: 7;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-transform: rotate(337deg);
+    -ms-transform: rotate(337deg);
+    transform: rotate(337deg);
+}
+
+.brown2 {
+    top: 401px;
+    left: 243px;
+    -webkit-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    transform: rotate(35deg);
+}
+
+@keyframes main-block {
+    from {opacity: 1;}
+    to {opacity: 0.3}
+}
+
+@keyframes transform-center {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1
+    }
+}
+
+@keyframes kolo {
+    0% {-webkit-transform: scale(0.6, 0.6);transform: scale(0.6, 0.6);
+        opacity: 1}
+    50% {-webkit-transform: scale(1, 1);transform: scale(1, 1);
+        opacity: 1}
+    100% {-webkit-transform: scale(0.6, 0.6);transform: scale(0.6, 0.6);
+        opacity: 1}
+}
+
+@keyframes shadow {
+    0% {opacity: 0; }
+    100% {opacity: 1; }
+}
+
+@keyframes white {
+    100% {opacity: 0; }
+}
+
+@keyframes radical {
+    0% {opacity: 1; }
+    100% {opacity: 0; }
+}
+
+@keyframes red-pill {
+    25% {left: 300px}
+    50% {top: 300px; opacity: 1}
+    100% {top: 450px; opacity: 0}
+}
+
+@keyframes yellow1 {
+    35% {-webkit-transform: translateX(-150px) translateY(35px);transform: translateX(-150px) translateY(35px)}
+    50% {-webkit-transform: translateX(-150px) translateY(40px);transform: translateX(-150px) translateY(40px)}
+    80% {-webkit-transform: translateX(-150px) translateY(340px);transform: translateX(-150px) translateY(340px); opacity: 1}
+    100% {-webkit-transform: translateX(-150px) translateY(340px);transform: translateX(-150px) translateY(340px);opacity: 0}
+}
+
+@keyframes yellow2 {
+    40% {-webkit-transform: translateX(-210px) translateY(10px);transform: translateX(-210px) translateY(10px)}
+    50% {-webkit-transform: translateX(-210px) translateY(10px);transform: translateX(-210px) translateY(10px)}
+    80% {-webkit-transform: translateX(-200px) translateY(350px);transform: translateX(-200px) translateY(350px); opacity: 1}
+    100% {-webkit-transform: translateX(-200px) translateY(355px);transform: translateX(-200px) translateY(355px);opacity: 0}
+}
+
+@keyframes yellow3 {
+    35% {-webkit-transform: translateX(-200px) translateY(50px);transform: translateX(-200px) translateY(50px)}
+    50% {-webkit-transform: translateX(-210px) translateY(55px);transform: translateX(-210px) translateY(55px)}
+    80% {-webkit-transform: translateX(-210px) translateY(340px);transform: translateX(-210px) translateY(340px); opacity: 1}
+    100% {-webkit-transform: translateX(-210px) translateY(340px);transform: translateX(-210px) translateY(340px);opacity: 0}
+}
+
+@keyframes yellow4 {
+    30% {-webkit-transform: translateX(-180px) translateY(45px);transform: translateX(-180px) translateY(45px)}
+    45% {-webkit-transform: translateX(-180px) translateY(45px);transform: translateX(-180px) translateY(45px)}
+    80% {-webkit-transform: translateX(-120px) translateY(345px);transform: translateX(-120px) translateY(345px); opacity: 1}
+    100% {-webkit-transform: translateX(-120px) translateY(345px);transform: translateX(-120px) translateY(345px);opacity: 0}
+}
+
+@keyframes yellow5 {
+    35% {-webkit-transform: translateX(-70px) translateY(20px);transform: translateX(-70px) translateY(20px)}
+    50% {-webkit-transform: translateX(-75px) translateY(25px);transform: translateX(-75px) translateY(25px)}
+    80% {-webkit-transform: translateX(-80px) translateY(330px);transform: translateX(-80px) translateY(330px); opacity: 1}
+    100% {-webkit-transform: translateX(-85px) translateY(330px);transform: translateX(-85px) translateY(330px);opacity: 0}
+}
+
+@keyframes red1 {
+    35% {-webkit-transform: translateX(150px) translateY(35px);transform: translateX(150px) translateY(35px)}
+    50% {-webkit-transform: translateX(150px) translateY(40px);transform: translateX(150px) translateY(35px)}
+    80% {-webkit-transform: translateX(230px) translateY(330px);transform: translateX(230px) translateY(330px); opacity: 1}
+    100% {-webkit-transform: translateX(235px) translateY(330px);transform: translateX(235px) translateY(330px);opacity: 0}
+}
+
+@keyframes red2 {
+    40% {-webkit-transform: translateX(130px) translateY(40px);transform: translateX(130px) translateY(40px)}
+    50% {-webkit-transform: translateX(130px) translateY(40px);transform: translateX(130px) translateY(40px)}
+    80% {-webkit-transform: translateX(180px) translateY(310px);transform: translateX(180px) translateY(310px); opacity: 1}
+    100% {-webkit-transform: translateX(180px) translateY(310px);transform: translateX(180px) translateY(310px);opacity: 0}
+}
+
+@keyframes red3 {
+    35% {-webkit-transform: translateX(50px) translateY(50px);transform: translateX(50px) translateY(50px)}
+    50% {-webkit-transform: translateX(55px) translateY(55px);transform: translateX(55px) translateY(55px)}
+    80% {-webkit-transform: translateX(20px) translateY(320px);transform: translateX(20px) translateY(320px); opacity: 1}
+    100% {-webkit-transform: translateX(25px) translateY(320px);transform: translateX(25px) translateY(320px);opacity: 0}
+}
+
+@keyframes red4 {
+    30% {-webkit-transform: translateX(100px) translateY(45px);transform: translateX(100px) translateY(45px)}
+    45% {-webkit-transform: translateX(100px) translateY(45px);transform: translateX(100px) translateY(45px)}
+    80% {-webkit-transform: translateX(110px) translateY(270px);transform: translateX(110px) translateY(270px); opacity: 1}
+    100% {-webkit-transform: translateX(110px) translateY(270px);transform: translateX(110px) translateY(270px);opacity: 0}
+}
+
+@keyframes red5 {
+    35% {-webkit-transform: translateX(30px) translateY(20px);transform: translateX(30px) translateY(20px)}
+    50% {-webkit-transform: translateX(35px) translateY(25px);transform: translateX(35px) translateY(25px)}
+    80% {-webkit-transform: translateX(45px) translateY(290px);transform: translateX(45px) translateY(290px); opacity: 1}
+    100% {-webkit-transform: translateX(50px) translateY(290px);transform: translateX(50px) translateY(290px);opacity: 0}
+}
