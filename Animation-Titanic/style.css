@@ -1,0 +1,613 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    background-color: #062748;
+}
+
+.wrapper {
+    width: 1024px;
+    height: 768px;
+    margin: 0 auto;
+    background: url("img/background.jpg") no-repeat 50%;
+    background-size: contain;
+    position: relative;
+    overflow: hidden;
+}
+
+.stars {
+    background: url("img/stars.png") 50% 50%;
+    width: 100%;
+    height: 246px;
+    position: absolute;
+    top: 0;
+}
+
+.twinkling-left{
+    background: url("img/twinkling.png") repeat top center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 246px;
+    z-index: 3;
+    animation: move-twink-back 100s linear infinite;
+}
+
+.twinkling-right{
+    background: url("img/twinkling.png") repeat top center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 246px;
+    z-index: 3;
+    animation: move-twink-back 100s linear infinite;
+}
+
+
+.gradient {
+    background: url("img/gradient.png");
+    width: 100%;
+    height: 291px;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    animation: gradient 3s infinite ease-in-out;
+}
+
+.click_me {
+    position: absolute;
+    color: #95ca00;
+    top: 70px;
+    left: 100px;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 50;
+    animation: click 1.5s infinite linear;
+}
+
+.hit .click_me {
+    display: none;
+}
+
+.wave1 {
+    background: url("img/wave1.png") repeat-x 50%;
+    width: 3000px;
+    height: 524px;
+    position: absolute;
+    bottom: 0;
+    animation: waves 5s infinite linear;
+}
+
+.wave2 {
+    background: url("img/wave2.png") repeat-x 50%;
+    width: 3000px;
+    height: 524px;
+    position: absolute;
+    bottom: 0;
+    z-index: 15;
+    animation: waves 10s infinite linear;
+}
+
+.iceberg {
+    background: url("img/ice.png");
+    width: 111px;
+    height: 131px;
+    position: absolute;
+    left: 440px;
+    top: 190px;
+    z-index: 10;
+    animation: iceberg 12s infinite ease-in-out;
+}
+
+.hit .iceberg {
+    animation: iceberg-hit 0.1s 2.5s linear forwards;
+}
+
+.boat-bubbles {
+    position: absolute;
+    top: 370px;
+    right: 0;
+    z-index: 20;
+    display: flex;
+    animation: boatBubbles 10s infinite ease-in-out;
+}
+
+.hit .boat-bubbles {
+    animation: boatHit 10s linear forwards;
+}
+
+.boat {
+    background: url("img/boat.png") no-repeat;
+    background-size: contain;
+    width: 441px;
+    height: 282px;
+    padding-right: 50px;
+    z-index: 25;
+    cursor: pointer;
+
+}
+
+.bubbles {
+    background: url("img/bubbles.png") no-repeat;
+    width: 47px;
+    height: 87px;
+    position: absolute;
+    top: 155px;
+    right: 0;
+    animation: bubbles 3s infinite linear;
+}
+
+.bubbles.bubbles2 {
+    opacity: 0;
+    animation: bubbles 3s 1.5s infinite linear;
+}
+
+.torpeda {
+    background: url("img/torpeda.png") no-repeat;
+    background-size: cover;
+    width: 155px;
+    height: 37px;
+    position: absolute;
+    display: none;
+    z-index: 30;
+}
+
+.hit .torpeda {
+    display: block;
+}
+
+.torpeda1 {
+    top: 341px;
+    left: 73px;
+    transform: rotate(5deg);
+    animation: torpeda1 2.5s ease-in forwards;
+}
+
+.torpeda2 {
+    top: 408px;
+    left: 73px;
+    transform: rotate(-4deg);
+    animation: torpeda2 2.5s ease-in forwards;
+
+}
+
+.torpeda3 {
+    top: 479px;
+    left: 90px;
+    transform: rotate(-18deg);
+    animation: torpeda3 2.5s ease-in forwards;
+
+}
+
+.torpeda4 {
+    top: 543px;
+    left: 118px;
+    transform: rotate(-33deg);
+    animation: torpeda4 2.5s ease-in forwards;
+
+}
+
+.torpeda5 {
+    top: 477px;
+    right: 92px;
+    transform: rotate(-171deg);
+    animation: torpeda5 2.5s ease-in forwards;
+
+}
+
+.torpeda6 {
+    top: 523px;
+    right: 102px;
+    transform: rotate(-166deg);
+    animation: torpeda6 2.5s ease-in forwards;
+
+}
+
+.ice1 {
+    background: url("img/ice1.png") no-repeat;
+    width: 70px;
+    height: 69px;
+    position: absolute;
+    top: 175px;
+    left: 470px;
+    z-index: 9;
+    animation: ice 9s 2.5s ease-out forwards
+}
+
+.ice2 {
+    background: url("img/ice2.png") no-repeat;
+    width: 45px;
+    height: 83px;
+    position: absolute;
+    top: 235px;
+    left: 526px;
+    z-index: 9;
+    animation: ice 8s 2.5s linear forwards
+
+}
+
+.ice3 {
+    background: url("img/ice3.png") no-repeat;
+    width: 53px;
+    height: 74px;
+    position: absolute;
+    top: 293px;
+    left: 474px;
+    z-index: 9;
+    animation: ice 10s 2.5s ease-out forwards
+
+}
+
+.ice4 {
+    background: url("img/ice4.png") no-repeat;
+    width: 55px;
+    height: 47px;
+    position: absolute;
+    top: 293px;
+    left: 421px;
+    z-index: 9;
+    animation: ice 9s 2.5s ease forwards
+
+
+}
+
+.ice5 {
+    background: url("img/ice5.png") no-repeat;
+    width: 56px;
+    height: 48px;
+    position: absolute;
+    top: 225px;
+    left: 424px;
+    z-index: 9;
+    animation: ice 7s 2.5s ease-in-out forwards
+
+
+}
+
+.ice {
+    display: none;
+}
+
+.hit .ice {
+    display: block;
+    opacity: 0;
+}
+
+.popap {
+    opacity: 0;
+}
+
+.hit .popap {
+    background: #2585b8;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 478px;
+    width: 800px;
+    margin: 150px auto;
+    text-align: center;
+    visibility: visible;
+    opacity: 0;
+    animation: popup 2s 7s forwards;
+    border: 8px solid #95ca00;
+    padding: 100px 30px 50px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    z-index: 100;
+}
+.hit .popap h1 {
+    color: #95ca00;
+    font-size: 60px;
+    text-shadow: 5px 5px #062748;
+}
+
+/**************Animation**************/
+@keyframes gradient {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+
+}
+
+@keyframes move-twink-back {
+    0% {background-position:0 0;}
+    100% {background-position:-1000px 5000px;}
+}
+
+@keyframes click {
+    0% {
+        opacity: 0;
+        /*transform: scale(0.7);*/
+    }
+    20% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        /*transform: scale(0.5);*/
+    }
+
+}
+
+@keyframes waves {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-1024px);
+    }
+}
+
+@keyframes iceberg {
+    0% {
+        transform: translateY(0px);
+    }
+
+    10% {
+        transform: translateY(20px);
+    }
+
+    20% {
+        transform: translateY(0px);
+    }
+
+    30% {
+        transform: translateY(30px);
+    }
+
+    40% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(25px);
+    }
+
+    60% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    80% {
+        transform: translateY(85px);
+        opacity: 0.4;
+
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+}
+
+@keyframes iceberg-hit {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes boatBubbles {
+    0% {
+        transform: translateX(0);
+    }
+    45% {
+        transform: translateX(-525px);
+    }
+    50% {
+        transform: translateX(-525px) rotateY(180deg);
+
+    }
+    100% {
+        transform: translateX(0) rotateY(180deg) perspective(400px);
+    }
+}
+
+
+
+@keyframes bubbles {
+    0% {
+        transform: translateX(-47px) scale(0.5);
+    }
+
+    20% {
+        transform: translateX(0px) scale(1);
+    }
+
+    40% {
+        transform: translate(50px, -100px) scale(1.1) rotate(0);
+    }
+
+    60% {
+        transform: translate(75px, -200px) scale(1.2);
+        transform-origin: 50% 50%;
+        opacity: 1;
+    }
+
+    80% {
+        transform: translate(95px, -260px) translateX(50px) scale(1.5) rotate(140deg);
+        transform-origin: 50% 50%;
+    }
+
+    100% {
+        transform: translate(105px, -310px) translateX(100px) scale(2) rotate(240deg);
+        opacity: 0;
+        transform-origin: 50% 50%;
+
+    }
+
+}
+
+@keyframes boatHit {
+    0%{
+        transform: translate3d(-200px, 0, 0);
+    }
+    45% {
+        transform: translate3d(-600px, -100px, -150px) scale(0.6);
+        opacity: 0.7;
+        z-index: auto;
+    }
+    50% {
+        transform: translate3d(-600px, -100px, -150px) scale(0.6) rotateY(180deg);
+        opacity: 1;
+        z-index: 5;
+    }
+    100% {
+        transform: translate3d(-50px, -100px, -200px) scale(0.6) rotateY(180deg);
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+@keyframes torpeda1 {
+    5% {
+        opacity: 1;
+    }
+
+    95% {
+        transform: translate(230px, -55px) rotate(-12deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(230px, -55px) rotate(-12deg);
+        opacity: 0;
+    }
+
+}
+
+@keyframes torpeda2 {
+    5% {
+        opacity: 1;
+    }
+
+    95% {
+        transform: translate(255px, -90px) rotate(-20deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(255px, -90px) rotate(-20deg);
+        opacity: 0;
+    }
+
+}
+
+@keyframes torpeda3 {
+    5% {
+        opacity: 1;
+    }
+
+    95% {
+        transform: translate(265px, -120px) rotate(-40deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(265px, -120px) rotate(-40deg);
+        opacity: 0;
+    }
+
+}
+
+@keyframes torpeda4 {
+    5% {
+        opacity: 1;
+    }
+
+    95% {
+        transform: translate(265px, -150px) rotate(-60deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(265px, -150px) rotate(-60deg);
+        opacity: 0;
+    }
+
+}
+
+@keyframes torpeda5 {
+    5% {
+        opacity: 1;
+    }
+
+    95% {
+        transform: translate(-255px, -155px) rotate(-150deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-255px, -155px) rotate(-150deg);
+        opacity: 0;
+    }
+
+
+}
+
+@keyframes torpeda6 {
+    5% {
+        opacity: 1;
+    }
+
+    95% {
+        transform: translate(-280px, -155px) rotate(-120deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-280px, -155px) rotate(-120deg);
+        opacity: 0;
+    }
+}
+
+@keyframes ice {
+    0% {
+        opacity: 0;
+    }
+
+    3% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(10px, 500px) scale(1.2) rotate(990deg);
+        opacity: 0;
+    }
+}
+
+@keyframes popup {
+    0% {
+        transform: scale(3);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(0.5);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
